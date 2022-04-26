@@ -1,0 +1,85 @@
+.sign-block{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+
+    border: solid 1px #e9f6c7;;
+    font-family: 'Manrope';
+    width: 35%;
+    align-self: center;
+}
+
+.sign-block__text {
+    background-color: #e9f6c7;
+    border-bottom: 8px solid #99cc00;
+    padding: 25px 30px;
+    font-size: 2rem;
+}
+
+#sign-block__wrong{
+    color: red;
+}
+
+.sign-block_form {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.sign-block_form__input{
+    margin-top:5px;
+    height: 40px;
+    border-radius: 3px;
+    border: solid 1px black;
+    margin-bottom: 10px;
+    font-family: 'Manrope';
+    font-size: 1rem;
+}
+
+.sign-block_form__input:focus{
+    border: solid 1px #e9f6c7;
+}
+
+.sign-block_form__input::placeholder{
+    color: black;
+    font-family: 'Manrope';
+    font-size: 1rem;
+}
+
+.sign-block_form__button {
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid #1f1f1f;
+    color: #1f1f1f;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    min-height: 40px;
+    min-width: 200px;
+    width: 100%;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 300ms ease-in-out,color 300ms ease-in-out,border 300ms ease-in-out;
+    white-space: normal;
+}
+
+.sign-block_form__button:hover{
+    background-color: #99cc00;
+}
+
+@media screen and (max-width:800px) {
+
+    .sign-block{
+        width: 90%;
+    }
+    
+}

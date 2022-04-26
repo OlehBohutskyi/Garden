@@ -1,0 +1,227 @@
+.admin-block{
+    background-color: #1f1f1f;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Manrope';
+}
+
+.admin-block_list{
+    flex: 0 0 20%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-top: 200px;
+}
+
+.admin-block_list_setting{
+    margin-bottom: 50px;
+}
+
+.admin-block_list_setting__main-page{
+
+    border: solid 1px white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out,color 300ms ease-in-out,border 300ms ease-in-out;
+}
+
+.admin-block_list_setting__main-page:hover{
+    background-color: #99cc00;
+    color: black;
+}
+
+.admin-block_list__articles{
+    margin-bottom: 50px;
+    border: solid 1px white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out,color 300ms ease-in-out,border 300ms ease-in-out;
+}
+
+.admin-block_list__articles:hover{
+    background-color: #99cc00;
+    color: black;
+}
+
+.admin-block_list__users{
+    border: solid 1px white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out,color 300ms ease-in-out,border 300ms ease-in-out;
+
+}
+
+.admin-block_list__users:hover{
+    background-color: #99cc00;
+    color: black;
+}
+
+.admin-block_main_main-page{
+    flex:80%;
+    position: relative;
+    display: none;
+    overflow: hidden;
+
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 20px;
+
+}
+
+.admin-block_main_main-page.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-block_main_articles{
+    flex: 0 0 80%;
+    display: none;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    padding-top: 200px;
+    padding-left: 50px;
+}
+
+table, th, td{
+    font-size: 12px;
+    border: solid 1px white;
+    padding: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+th, td{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.admin-block_main_articles.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-block_main_users{
+    flex:0 0 80%;
+    display: none;
+    background-color: #1f1f1f;
+    position: relative;
+    overflow: hidden;
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+.admin-block_main_users.show{
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-block_main_articles__create{
+    padding: 10px;
+    background-color: #99cc00;
+    transition: background-color 300ms ease-in-out,color 300ms ease-in-out,border 300ms ease-in-out;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    box-sizing: border-box;
+    width: 200px;
+    text-align: center;
+}
+
+.admin-block_main_articles__create:hover{
+    background-color: #1f1f1f;
+    color: white;
+}
+
+td a{
+    color: white;
+    text-decoration: none;
+}
+
+td a:hover{
+    text-decoration: underline;
+}
+
+.search-block{
+    margin-bottom: 20px;
+}
+
+.search-block input{
+    background-color: #2a2a2a;
+    color: white;
+    height: 40px;
+    font-family: Manrope;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+
+.search-block button{
+    height: 40px;
+    font-family: Manrope;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background-color: #99cc00;
+    transition: background-color 150ms ease-in-out,color 150ms ease-in-out,border 150ms ease-in-out;
+
+}
+
+.search-block button:hover{
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.admin-block_main_main-page__form button{
+    height: 40px;
+    width: 40%;
+    font-family: Manrope;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background-color: #99cc00;
+    transition: background-color 150ms ease-in-out,color 150ms ease-in-out,border 150ms ease-in-out;
+    margin-bottom: 30px;
+}
+
+.admin-block_main_main-page__form button:hover{
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.admin-block_main_main-page__form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.admin-block_main_main-page__form label{
+    margin-bottom: 10px;
+}
+
+.admin-block_main_main-page__form select{
+    margin-bottom: 40px;
+}
+
+.admin-block_main_main-page__form option{
+    background-color: #2a2a2a;
+}

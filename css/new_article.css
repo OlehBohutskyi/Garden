@@ -1,0 +1,37 @@
+.new-article-block{
+    margin-top: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+
+
+}
+
+.new-article-block_form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.new-article-block_form input, textarea,button, label{
+    margin-bottom: 20px;
+    font-family: 'Manrope';
+}
+
+
+
+.new-article-block_form textarea{
+    height: 300px;
+}
+
+.new-article-block_form button{
+    border: none;
+    background-color: #99cc00;
+    color: black;
+    height: 30px;
+    border-radius: 20px;
+
+}

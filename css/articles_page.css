@@ -1,0 +1,134 @@
+.page-block{
+    margin: 180px 30px 30px;
+    font-family: Manrope;
+}
+
+.articles-block__title{
+    font-size: 50px;
+
+}
+
+.articles-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+    margin-top: 20px;
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 500px) {
+
+    .articles-block{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .articles-block{
+        grid-template-columns: 1fr;
+    }
+}
+
+.articles-block__count{
+    color: #676767;
+    margin-top: 10px;
+}
+
+.articles-block_article{
+    background-color: #d0d0d0;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+
+}
+
+.articles-block_article img{
+    flex: 0 0 60%;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+}
+
+.articles-block_article iframe{
+
+
+
+}
+
+.video-background {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    flex: 0 0 60%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transform: translateY(0px);
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 177.77%;
+    min-height: 100%;
+    max-width: 355.54%;
+    max-height: 200%;
+    transform: translate(-50%, -50%);
+
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-background iframe {
+        height: 56.25vw;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-background iframe {
+        width: 177.78vh;
+    }
+}
+
+.articles-block_article p{
+    color: black;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.articles-block_article__name{
+    font-size: 25px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    line-height: 30px;
+
+}
+
+.articles-block_article__subname{
+
+
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+
+
+}
+
+

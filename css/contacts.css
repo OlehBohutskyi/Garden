@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+.contacts-block{
+    margin: 180px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: Manrope, serif;
+
+}
+
+.contacts-block__title{
+    font-size: 30px;
+
+}
+
+.hours-contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .hours-contacts{
+        flex-direction: column;
+    }
+
+    .contacts p{
+        text-align: left;
+    }
+
+}
+
+.contacts p{
+    text-align: right;
+}
+
+.contacts{
+    margin-bottom: 20px;
+}
+
+.map p {
+    margin-bottom: 20px;
+}
+
+.map iframe{
+    width: 100%;
+}
